@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
-const IndexPage = () => (
+export default () =>
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-  </div>
-);
+    <h1>Antonio Rodríguez</h1>
 
-export default IndexPage;
+    <p>Hello! I'm a web & software developer from Miami, Florida employed as the lead technologist at a digital marketing agency.</p>
+
+    <p>Besides building my own companies, I've also built things for many business and brands.</p>
+  </div>
