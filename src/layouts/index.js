@@ -11,7 +11,10 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div>
+    <div style={{
+      padding: '25px',
+      maxWidth: '950px',
+    }}>
       {children()}
     </div>
   </div>
