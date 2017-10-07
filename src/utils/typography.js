@@ -1,7 +1,7 @@
 import Typography from 'typography';
 
-const headerGoogleFont = 'Source Sans Pro';
-const bodyGoogleFont = 'Open Sans';
+const headerGoogleFont = 'Raleway';
+const bodyGoogleFont = 'Karma';
 
 const typography = new Typography({
   baseFontSize: '16px',
