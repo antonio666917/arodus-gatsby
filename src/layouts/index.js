@@ -1,9 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
+
+const StyledTemplateWrapper = styled.div`
+  .container {
+    max-width: 930px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+`;
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <StyledTemplateWrapper>
     <Helmet
       title="Antonio Rodriguez"
       meta={[
@@ -11,13 +20,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div style={{
-      padding: '25px',
-      maxWidth: '950px',
-    }}>
-      {children()}
-    </div>
-  </div>
+    {children()}
+
+  </StyledTemplateWrapper>
 );
 
 TemplateWrapper.propTypes = {
