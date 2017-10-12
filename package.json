@@ -9,6 +9,9 @@
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
+    "react-burger-menu": "^2.1.6",
+    "react-headroom": "^2.2.1",
+    "react-icons": "^2.2.7",
     "react-typography": "^0.16.5",
     "styled-components": "^2.2.1"
   },
