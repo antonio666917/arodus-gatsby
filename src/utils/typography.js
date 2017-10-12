@@ -5,10 +5,11 @@ const bodyGoogleFont = 'Karma';
 
 const typography = new Typography({
   baseFontSize: '16px',
-  baseLineHeight: 1.666,
+  baseLineHeight: 1.5,
   scaleRatio: 1.666,
   headerFontFamily: [headerGoogleFont, 'sans-serif'],
   bodyFontFamily: [bodyGoogleFont, 'sans-serif'],
+  includeNormalize: true,
   googleFonts: [
     {
       name: bodyGoogleFont,
@@ -20,7 +21,7 @@ const typography = new Typography({
     {
       name: headerGoogleFont,
       styles: [
-        '500'
+        '900'
       ]
     }
   ],

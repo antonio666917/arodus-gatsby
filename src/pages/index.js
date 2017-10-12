@@ -1,10 +1,52 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+import ProfilePicture from '../assets/images/profilepicture.jpg';
+import Link from 'gatsby-link';
+
+const StyledHome = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: left;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+    border: none;
+  }
+  hr {
+    width: 100%;
+  }
+  a, a:active, a:visited {
+    color: #7A40FA;
+    text-decoration: none;
+  }
+  a:hover {
+    background: #7A40FA;
+    color: white;
+  }
+`;
+
 
 export default () =>
-  <div>
+  <StyledHome className="container">
+
+    <img src={ProfilePicture} alt="Antonio Rodriguez - leader, web developer, dad, husband, knows what he's doing 60% of the time"/>
+
+    <p>Hello! I'm a web developer employed as the chief technologist at a digital marketing agency. I'm currently working primarily with React and Node but over the years I have acquired proficiency in many technologies.</p>
+    <p>Besides building my own companies, I've also built things for many brands, Fortune 500 and small companies or individuals alike. Need a hand with an upcoming project or application? Learn a bit more <Link to="/about">about me</Link> and then consider <a href="mailto:hello@antoniorodriguez.us">working with me</a>.</p>
+    <p>Thanks for visiting!</p>
+
     <h1>Antonio Rodríguez</h1>
 
-    <p>Hello! I'm a web & software developer from Miami, Florida employed as the lead technologist at a digital marketing agency.</p>
+    <hr />
 
-    <p>Besides building my own companies, I've also built things for many business and brands.</p>
-  </div>
+  </StyledHome>
