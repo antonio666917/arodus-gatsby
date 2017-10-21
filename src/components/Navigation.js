@@ -1,7 +1,7 @@
-import React from 'react';
-import Menu from 'react-burger-menu/lib/menus/slide';
-import styled from 'styled-components';
-import Link from 'gatsby-link';
+import React from "react";
+import Menu from "react-burger-menu/lib/menus/slide";
+import styled from "styled-components";
+import Link from "gatsby-link";
 
 const StyledMenu = styled.div`
   .bm-burger-button {
@@ -23,7 +23,7 @@ const StyledMenu = styled.div`
     background: white;
   }
   .bm-menu {
-    background: #2A2070;
+    background: #2a2070;
     padding: 2.5rem 1.5rem 0;
   }
   .bm-morph-shape {
@@ -40,12 +40,11 @@ const StyledMenu = styled.div`
   }
 `;
 
-
 class Navigation extends React.Component {
   constructor() {
     super();
     this.state = {
-      open: false,
+      open: false
     };
   }
   render() {
@@ -58,7 +57,7 @@ class Navigation extends React.Component {
           <Link to="/contact">Contact</Link>
         </Menu>
       </StyledMenu>
-    )
+    );
   }
 }
 
