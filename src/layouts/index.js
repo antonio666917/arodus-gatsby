@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import styled from 'styled-components';
-import Headroom from 'react-headroom';
-import Header from '../components/Header';
-import Navigation from '../components/Navigation';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import styled from "styled-components";
+import Headroom from "react-headroom";
+import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 
 const StyledTemplateWrapper = styled.div`
   .container {
@@ -22,8 +22,15 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Antonio Rodriguez"
       meta={[
-        { name: 'description', content: 'Web and software developer from Miami, Florida.' },
-        { name: 'keywords', content: 'web developer, software developer, miami, florida, puerto rico, unlimited power, cookies' },
+        {
+          name: "description",
+          content: "Web and software developer from Miami, Florida."
+        },
+        {
+          name: "keywords",
+          content:
+            "web developer, software developer, miami, florida, puerto rico, unlimited power, cookies"
+        }
       ]}
     />
     <Navigation />
@@ -32,7 +39,7 @@ const TemplateWrapper = ({ children }) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 };
 
 export default TemplateWrapper;
