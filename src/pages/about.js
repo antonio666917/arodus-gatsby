@@ -1,45 +1,141 @@
-import React from 'react';
-import styled from 'styled-components';
-import ProfilePicture from '../assets/images/profilepicture.jpg';
+import React from "react";
+import styled from "styled-components";
+import ProfilePicture from "../assets/images/profilepicture.jpg";
 
-const StyledAbout = styled.div`
+const StyledAbout = styled.div``;
+const todayYear = new Date().getFullYear();
+const ginosBdayYear = 2005;
 
-`;
-
-
-export default () =>
+export default () => (
   <StyledAbout className="container">
     <h1>About me</h1>
-    <p>Building software brings me immense satisfaction. I own experience leading teams, mentoring interns, as a software engineer, as a project manager, as an external consultant, as a digital marketing technologist and hacking my way through any technical challenge that showed its beautiful face. Check out my LinkedIn profile. Two out of two of the companies that I've built, or helped built, have been acquired. Boom!</p>
-    <p>I'm happily married and currently living in Miami, Florida. English is my second language and I may or may not be a horrible writer.</p>
+    <p>
+      I own experience as a front-end developer, as a back-end developer,
+      leading and mentoring engineering teams, remotely and physically, as a
+      project manager, as an external consultant, as a digital marketing
+      ("creative") technologist and in various other roles encompassed around
+      technology.
+    </p>
 
-    <h2>Technology</h2>
+    <h2>I f@#&*ing love learning and building things!</h2>
+    <p>
+      Depending on the task or project, sometimes you just have to roll up the
+      sleeves and execute outside the comfort zones. Ultimately, persevering
+      through challenges is something that I look forward to every other day. I
+      might not be the best but I will definitely attempt what's needed until
+      achieving a viable resolution.
+    </p>
+    <p>
+      My academic background is in computer science, which permits me to jump
+      around languages, frameworks, design patterns, and the such, with what I
+      think is relative ease. At the end of the day, I just don't want to marry
+      myself with any technology or framework. I'm already married to my wife!
+      One must choose the correct tool for each situation.
+    </p>
+    <p>
+      I'm eternally grateful to my parents and college professors for instilling
+      what has become a passion for learning. In our field of work, continuous
+      education must be a serious commitment if one seeks to be a valuable team
+      player and contributor. I also strongly believe that our learning focus
+      should not be limited to tech. We should study a little something about
+      everything to become well-rounded human beings. One can be a genius at
+      functional programming but without some fundamentals on, for example,
+      empathy and communication, one could miss out on many good things.
+    </p>
 
-    <p>I'm eternally grateful to my college professors, and parents, for instilling what has become an addiction for learning. In our field of work, it has to be this way because continuous education must be a serious commitment. My academic background, mainly in computer science, permits me to jump around languages, frameworks, and design patterns with, what I think, is relative ease. And in the end of the day, I don't want to marry myself with any specific technology; one must choose the correct tool for each situation.
-    For most projects, I will default to working with the LAMP or MEAN stacks, but my 'production' proficiency is not limited to these. I'm always encouraging my teams to try the next thing, make proof-of-concepts, and share the learning with the rest of the team. We feel this is metaphorically similar to how Batman maintains his belt tools 💪🏼.
-    I absolutely LOVE git, zsh, scaffolding tools like Yeoman, Sass, JavaScript, the BEM methodology, linters, how accessible AI is nowadays, the "Ballmer Peak" and concise documentation. This year I'm focusing my learning efforts on conversational interfaces, ES6, Angular, React, React Native, WebPack, TypeScript, NodeJS and artificial intelligence PaaS.</p>
-
-    <p>A regret I have, one which I hope to remedy soon, is my lack of work on open source projects. I feel shitty about not contributing back!</p>
+    <h2>Violence is a no-go</h2>
+    <p>
+      Can we truly work solely with someone's skills but not with their being
+      and emotions? Sometimes we can, and that's cool. But sometimes people want
+      to go to work and develop professional relationships based on trust and
+      kindnesses. This is why I attempt to have an empathy-based approach to
+      communication and the overall management of things throughout my teams.
+    </p>
+    <p>
+      Just check out the news and see how the strictly "performance-based" or
+      "elitist" approaches in management and leading are working out... I don't
+      want to discredit these styles, but my opinion is that we have to achieve
+      a balance. As human beings, we have to seek to avoid violence and
+      judgment. We have to seek for our coworkers to work with desire,
+      commitment, and being proud of the products that we build. There's nothing
+      powerful that an engineer that is inspired, empowered, (and well paid).
+    </p>
+    <p>
+      I also try to encourage my teams day in and day out to try the next and
+      the previous thing. Make a proof-of-concept. Let's philosophize a little
+      bit on this approach versus that one. CSS-in-JS is dumb? Why? Let's try it
+      out. Oh, you love it now; that's great. Still dislike it? That's ok too.
+      Share the learnings with the rest of the teams. Write some docs about it.{" "}
+      <strong>Let's do it</strong>!
+    </p>
 
     <h2>#AdLife</h2>
 
-    <p>Working out of a marketing agency lets me build and deploy things insanely fast and I love this! My teams ship out hundred of projects each year, each with variable scopes of work and duration. Our top deliverables are websites, promotional apps, chatbots and 'custom' tools.</p>
+    <p>
+      Working out of a marketing agency is fun! Without going into the innate
+      craziness of the culture and the office's spaces... We get to pick our
+      stacks with virtually no restrictions (in most cases) and get to build
+      whatever crazy shit we can think of! My teams ship out hundreds of
+      projects each year, each with variable scopes of work, difficulty, and
+      duration. And while our top deliverables are websites, promotional
+      web-apps, chatbots and a ton of custom tools, we build an insane range of
+      things.
+    </p>
 
-    <p>My favorite project at the moment is our MINE data platform. It's a badass analytics, insights and reporting tool that consolidates data from hundreds of media campaigns (Talend -> BigQuery -> custom management tools -> Tableau) from over 36 data sources of media, social, traffic, placement, and revenue. I consider this the heart of our agency.</p>
+    <p>
+      My favorite project at the moment is our MINE data platform. It's a huge
+      analytics, insights and reporting engine that consolidates data from
+      hundreds of concurrent media campaigns using Talend, BigQuery, custom
+      management tools written in Python, and Tableau for visualization, from
+      over 36 data sources of media, social, traffic, placement, revenue and
+      other third-party sources for each client. I consider this the heart of
+      our agency.
+    </p>
 
     <h2>Something extra</h2>
 
     <ul>
-      <li>We have a 12-year old boy, who is a TOTAL BADASS!</li>
-      <li>I can effortlessly eat two large pizzas by myself.</li>
-      <li>Before college I was an avid athlete, practicing Shotokan and gymnastics competitively! Nowadays I partake in pick-up basketball and DOTA2.</li>
-      <li>I achieved some certifications while attending high-school (CCNA, MSCE, Net+ and A+) and worked as a network specialist at the University of Puerto Rico for several months.</li>
-      <li>When I moved to Miami I founded the "Below-Amateur Athletes Club" because we couldn't find people to play basketball with. I love 🏀!</li>
-      <li>My little sister is an inspiration for me.</li>
-      <li>While working as a network specialist at the University of Puerto Rico's main precinct, a friend and I challenged the Dean of Technology to let us rebuild the aging website... he accepted and I quickly became the Lead Web Developer for the whole precinct! I built a suite of web-based student services: enrollment, tuition payments, online grades, schedules, academic progress evaluations, and other services. These web services are still in use to this date, hopefully with updated source code 😅!</li>
-      <li>During "the big 2010 student strike" at the University of Puerto Rico I built the first secure electronic referendum system employed by any governmental or educational institution in Puerto Rico. It was called the "Sistema de Consulta al Estudiante". It was a glorious disaster.</li>
-      <li>Started my first business with a great friend, Jorge Suarez (he's now the head of product for a fancy new startup called Hyp3r) and the experience was just mind-blowing. It was a creative web development studio called "Kolapse Interactive". Business was good. Eventually, a digital marketing agency from Miami acquired Kolapse.</li>
-      <li>I love hackathons!</li>
+      <li>
+        I'm happily married and currently living in Miami, Florida with my wife
+        and our {todayYear - ginosBdayYear}-year old son.
+      </li>
+      <li>English is my second language.</li>
+      <li>I may or may not be a horrible writer.</li>
+      <li>
+        A regret I have, one which I hope to remedy soon, is my lack of work on
+        open source projects.
+      </li>
+      <li>
+        Two of my recent business ventures have been acquired but the
+        experiences have been more educational than lucrative.
+      </li>
+      <li>
+        This year I've been focusing my efforts on conversational interfaces,
+        artificial intelligence, React, the Go language and improving my team
+        and project management skills.
+      </li>
+      <li>
+        Before college I was an avid athlete, practicing Shotokan and gymnastics
+        competitively! Nowadays I partake in pick-up basketball and DOTA2.
+      </li>
+      <li>I can play a mean guitar.</li>
+      <li>
+        While working as a network specialist at the University of Puerto Rico's
+        main precinct, a friend and I challenged the Dean of Technology to let
+        us rebuild the aging website... he accepted and I quickly became the
+        Lead Web Developer for the whole precinct! I built a suite of web-based
+        student services: enrollment, tuition payments, online grades,
+        schedules, academic progress evaluations, and other services. These web
+        services are still in use to this date, hopefully with updated source
+        code 😅!
+      </li>
+      <li>
+        During "the big 2010 student strike" at the University of Puerto Rico I
+        built the first secure electronic referendum system employed by any
+        governmental or educational institution in Puerto Rico. It was called
+        the "Sistema de Consulta al Estudiante". It was a glorious disaster.
+      </li>
       <li>My wife and I met on Twitter.</li>
     </ul>
   </StyledAbout>
+);
