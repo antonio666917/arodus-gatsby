@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/arodus-gastby`,
   siteMetadata: {
     title: `Antonio Rodriguez - Web Developer from Miami, Florida`
   },
