@@ -4,28 +4,30 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.45",
-    "gatsby-link": "^1.6.17",
-    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby": "^1.9.79",
+    "gatsby-link": "^1.6.23",
+    "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
-    "react-headroom": "^2.2.1",
+    "react-headroom": "^2.2.2",
     "react-icons": "^2.2.7",
     "react-typography": "^0.16.5",
-    "styled-components": "^2.2.1"
+    "styled-components": "^2.2.2"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format":
-      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
-    "prettier": "^1.6.1"
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.7.4"
   }
 }
