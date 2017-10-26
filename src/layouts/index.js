@@ -3,17 +3,28 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import Headroom from "react-headroom";
-import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 
 const StyledTemplateWrapper = styled.div`
   .container {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    max-width: 830px;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    margin: 0 auto;
+    max-width: 850px;
+    margin-top: 60px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  a,
+  a:active,
+  a:visited {
+    color: #7a40fa;
+    text-decoration: none;
+    transition: all 0.6s;
+  }
+  a:hover {
+    background: #7a40fa;
+    color: white;
   }
 `;
 

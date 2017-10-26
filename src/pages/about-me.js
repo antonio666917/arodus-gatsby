@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ProfilePicture from "../assets/images/profilepicture.jpg";
+
+import PictureFrame from "../components/PictureFrame";
 
 const StyledAbout = styled.div``;
 const todayYear = new Date().getFullYear();
@@ -13,7 +14,7 @@ export default () => (
       I own experience as a front-end developer, as a back-end developer,
       leading and mentoring engineering teams, remotely and physically, as a
       project manager, as an external consultant, as a digital marketing
-      ("creative") technologist and in various other roles encompassed around
+      "creative" technologist and in various other roles encompassed around
       technology.
     </p>
 
@@ -137,5 +138,7 @@ export default () => (
       </li>
       <li>My wife and I met on Twitter.</li>
     </ul>
+
+    <PictureFrame />
   </StyledAbout>
 );

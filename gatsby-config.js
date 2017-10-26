@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Antonio Rodriguez`,
+    title: `Antonio Rodriguez - Web Developer from Miami, Florida`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
-    },
-  ],
-}
+        pathToConfigModule: `src/utils/typography.js`
+      }
+    }
+  ]
+};
