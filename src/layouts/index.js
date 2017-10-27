@@ -15,16 +15,17 @@ const StyledTemplateWrapper = styled.div`
     padding-left: 25px;
     padding-right: 25px;
   }
-  a,
-  a:active,
-  a:visited {
+  a {
     color: #7a40fa;
     text-decoration: none;
     transition: all 0.6s;
+    &:hover {
+      background: #7a40fa;
+      color: white;
+    }
   }
-  a:hover {
-    background: #7a40fa;
-    color: white;
+  hr {
+    width: 100%;
   }
 `;
 
