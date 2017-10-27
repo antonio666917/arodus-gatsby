@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Helmet from "react-helmet";
 import PictureFrame from "../components/PictureFrame";
 
 const StyledAbout = styled.div``;
@@ -9,6 +9,15 @@ const ginosBdayYear = 2005;
 
 export default () => (
   <StyledAbout className="container">
+    <Helmet
+      title="About me | Antonio Rodriguez"
+      meta={[
+        {
+          name: "description",
+          content: "Knows what he's doing 60% of the time. Wow!"
+        }
+      ]}
+    />
     <h1>About me</h1>
     <p>
       I own experience as a front-end developer, as a back-end developer,
