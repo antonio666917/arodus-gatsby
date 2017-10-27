@@ -1,30 +1,32 @@
-import React from 'react';
-import { GoogleFont } from 'react-typography';
-import typography from './utils/typography';
+import React from "react";
+import { GoogleFont } from "react-typography";
+import typography from "./utils/typography";
+import favicon from "./assets/favicon.ico";
 
-let stylesStr
+let stylesStr;
 if (process.env.NODE_ENV === `production`) {
   try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
+    stylesStr = require(`!raw-loader!../public/styles.css`);
   } catch (e) {
-    console.log(e)
+    console.log(e);
   }
 }
 
 module.exports = class HTML extends React.Component {
   render() {
-    let css
+    let css;
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
           id="gatsby-inlined-css"
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
-      )
+      );
     }
     return (
       <html>
         <head>
+          <link rel="shortcut icon" type="image/x-icon" href={favicon} />
           <GoogleFont typography={typography} />
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -45,6 +47,6 @@ module.exports = class HTML extends React.Component {
           {this.props.postBodyComponents}
         </body>
       </html>
-    )
+    );
   }
-}
+};
