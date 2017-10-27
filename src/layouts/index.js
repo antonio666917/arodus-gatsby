@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
 import styled from "styled-components";
 import Headroom from "react-headroom";
 import Navigation from "../components/Navigation";
@@ -31,20 +30,6 @@ const StyledTemplateWrapper = styled.div`
 
 const TemplateWrapper = ({ children }) => (
   <StyledTemplateWrapper>
-    <Helmet
-      title="Antonio Rodriguez"
-      meta={[
-        {
-          name: "description",
-          content: "Web and software developer from Miami, Florida."
-        },
-        {
-          name: "keywords",
-          content:
-            "web developer, software developer, miami, florida, puerto rico, unlimited power, cookies"
-        }
-      ]}
-    />
     <Navigation />
     {children()}
   </StyledTemplateWrapper>
