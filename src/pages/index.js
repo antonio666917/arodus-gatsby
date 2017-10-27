@@ -8,10 +8,6 @@ const StyledHome = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  hr {
-    width: 100%;
-  }
 `;
 
 export default () => (
@@ -28,7 +24,9 @@ export default () => (
       brands, Fortune 500 and small companies or individuals alike. Need a hand
       with an upcoming project? Learn a bit more{" "}
       <Link to="/about-me">about me</Link> and then consider{" "}
-      <a href="mailto:hello@antoniorodriguez.us">working with me</a>.
+      <a href="mailto:antoniwan@gmail.com?subject=Let's work together!">
+        working with me
+      </a>.
     </p>
     <p>
       Thanks for visiting!<br />
