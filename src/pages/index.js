@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
+import Helmet from "react-helmet";
 import PictureFrame from "../components/PictureFrame";
 import Social from "../components/Social";
 
@@ -12,6 +13,15 @@ const StyledHome = styled.div`
 
 export default () => (
   <StyledHome className="container">
+    <Helmet
+      title="Antonio Rodriguez"
+      meta={[
+        {
+          name: "description",
+          content: "Web developer in Miami, Florida."
+        }
+      ]}
+    />
     <h1>Hello!</h1>
     <p>
       I'm a <strong>web developer</strong> employed as the{" "}
