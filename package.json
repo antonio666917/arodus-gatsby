@@ -9,6 +9,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
+    "react-ga": "^2.3.5",
     "react-headroom": "^2.2.2",
     "react-icons": "^2.2.7",
     "react-typography": "^0.16.5",
