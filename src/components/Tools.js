@@ -19,7 +19,9 @@ const StyledControls = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   button {
     padding: 0.5rem 1.5rem;
     transition: all 0.6s;
@@ -154,7 +156,8 @@ class Tools extends React.Component {
       .map(skill => <SkillItem {...skill} />);
     return (
       <StyledTechbox className="container">
-        <h3>The Tools</h3>
+        <h1>The Tools</h1>
+        <p>Ordered alphabetically</p>
         <Controls
           setStatus={this.setStatus}
           currentFilter={this.state.filter}

@@ -11,39 +11,45 @@ const StyledHome = styled.div`
   align-items: flex-start;
 `;
 
-export default () => (
-  <StyledHome className="container">
-    <Helmet
-      title="Antonio Rodriguez"
-      meta={[
-        {
-          name: "description",
-          content: "Web developer in Miami, Florida."
-        }
-      ]}
-    />
-    <h1>Hello!</h1>
-    <p>
-      I'm a <strong>web developer</strong> employed as the{" "}
-      <strong>chief technologist</strong> at a digital marketing agency.
-      Currently I work primarily with React and Node but over the years I have
-      acquired proficiency in many technologies.
-    </p>
-    <p>
-      Besides building my own companies, I've also produced things for many
-      brands, Fortune 500 and small companies or individuals alike. Need a hand
-      with an upcoming project? Learn a bit more{" "}
-      <Link to="/about-me">about me</Link> and then consider{" "}
-      <a href="mailto:antoniwan@gmail.com?subject=Let's work together!">
-        working with me
-      </a>.
-    </p>
-    <p>
-      Thanks for visiting!<br />
-      <strong>Antonio Rodríguez</strong>
-    </p>
+class Home extends React.Component {
+  render() {
+    return (
+      <StyledHome className="container">
+        <Helmet
+          title="Antonio Rodriguez"
+          meta={[
+            {
+              name: "description",
+              content: "Web developer in Miami, Florida."
+            }
+          ]}
+        />
+        <h1>Hello!</h1>
+        <p>
+          I'm a <strong>web developer</strong> employed as the{" "}
+          <strong>chief technologist</strong> at a digital marketing agency.
+          Currently I work primarily with React and Node but over the years I
+          have acquired proficiency in{" "}
+          <Link to="/the-tools">many technologies</Link>.
+        </p>
+        <p>
+          Besides building my own companies, I've also produced things for many
+          brands, Fortune 500 and small companies or individuals alike. Need a
+          hand with an upcoming project? Learn a bit more{" "}
+          <Link to="/about-me">about me</Link> and then consider{" "}
+          <a href="mailto:antoniwan@gmail.com?subject=Let's work together!">
+            working with me
+          </a>.
+        </p>
+        <p>
+          Thanks for visiting!<br />
+          <strong>Antonio Rodríguez</strong>
+        </p>
 
-    <hr />
-    <Social />
-  </StyledHome>
-);
+        <hr />
+        <Social />
+      </StyledHome>
+    );
+  }
+}
+export default Home;
