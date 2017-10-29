@@ -169,13 +169,15 @@ export default {
       title: "Sketch",
       desc: "design toolkit",
       prod: true,
-      hobby: true
+      hobby: true,
+      actual: true
     },
     {
       title: "Amazon Alexa",
       desc: "voice service framework",
       prod: true,
-      hobby: true
+      hobby: true,
+      actual: true
     },
     {
       title: "Wit.AI",
@@ -209,6 +211,22 @@ export default {
       title: "Apache Cordova",
       desc: "mobile development framework",
       prod: true,
+      hobby: true,
+      actual: false,
+      learning: false
+    },
+    {
+      title: "C++",
+      desc: "programming language",
+      prod: false,
+      hobby: true,
+      actual: false,
+      learning: false
+    },
+    {
+      title: "Swift",
+      desc: "programming language",
+      prod: false,
       hobby: true,
       actual: false,
       learning: false
