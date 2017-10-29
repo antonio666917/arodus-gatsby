@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Helmet from "react-helmet";
+import Link from "gatsby-link";
 import PictureFrame from "../components/PictureFrame";
 
 const StyledAbout = styled.div``;
@@ -40,7 +41,8 @@ export default () => (
       around languages, frameworks, design patterns, and the such, with what I
       think is relative ease. At the end of the day, I just don't want to marry
       myself with any technology or framework. I'm already married to my wife!
-      One must choose the correct tool for each situation.
+      One must choose the <Link to="/the-tools">correct tool</Link> for each
+      situation.
     </p>
     <p>
       I'm eternally grateful to my parents and college professors for instilling
