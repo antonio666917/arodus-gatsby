@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://antoniorodriguez.us`,
     title: `Antonio Rodriguez - Web Developer from Miami, Florida`
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
