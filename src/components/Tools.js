@@ -1,17 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import { TechSkills } from "../data/techskills";
-
-function slugify(text) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[^\w\-]+/g, "")
-    .replace(/\-\-+/g, "-")
-    .replace(/^-+/, "")
-    .replace(/-+$/, "");
-}
+import { slugify } from "../utils/misc";
 
 const StyledTechbox = styled.div``;
 const StyledControls = styled.div`
@@ -23,6 +14,7 @@ const StyledControls = styled.div`
   align-items: center;
   justify-content: flex-start;
   button {
+    background: #f0f0f0;
     padding: 0.5rem 1.5rem;
     transition: all 0.6s;
     border: none;
@@ -66,32 +58,37 @@ const Controls = props => {
       <button
         onClick={props.setStatus}
         className={props.currentFilter === "all" ? "is-active" : ""}
+        data-filter="all"
       >
         All
       </button>
       <button
         onClick={props.setStatus}
-        className={props.currentFilter === "current-stack" ? "is-active" : ""}
+        className={props.currentFilter === "current" ? "is-active" : ""}
+        data-filter="current"
       >
-        Current Stack
+        Currently using*
       </button>
       <button
         onClick={props.setStatus}
         className={props.currentFilter === "learning" ? "is-active" : ""}
+        data-filter="learning"
       >
         Learning
       </button>
       <button
         onClick={props.setStatus}
-        className={props.currentFilter === "hobbyist" ? "is-active" : ""}
+        className={props.currentFilter === "hobby" ? "is-active" : ""}
+        data-filter="hobby"
       >
         Hobbyist
       </button>
       <button
         onClick={props.setStatus}
-        className={props.currentFilter === "legacy" ? "is-active" : ""}
+        className={props.currentFilter === "old" ? "is-active" : ""}
+        data-filter="old"
       >
-        Legacy
+        Legacy*
       </button>
     </StyledControls>
   );
@@ -112,56 +109,60 @@ class Tools extends React.Component {
   constructor() {
     super();
     this.state = {
-      filter: "current-stack"
+      filter: "current"
     };
     this.setStatus = this.setStatus.bind(this);
   }
   setStatus(e) {
-    const newStatus = slugify(e.target.textContent);
     this.setState({
-      filter: newStatus
+      filter: slugify(e.target.dataset.filter)
     });
   }
   render() {
     const skillItems = TechSkills.filter(skill => {
       switch (this.state.filter) {
-        case "all":
-          return true;
-          break;
-        case "current-stack":
-          return skill.actual === true && skill.prod === true;
+        case "current":
+          return skill.actual && skill.prod;
           break;
         case "learning":
-          return skill.learning === true;
+          return skill.learning;
           break;
         case "production":
-          return skill.prod === true;
+          return skill.prod;
           break;
-        case "hobbyist":
-          return skill.actual === true && skill.hobby === true;
+        case "hobby":
+          return skill.actual && skill.hobby;
           break;
-        case "legacy":
-          return skill.actual === false;
+        case "old":
+          return !skill.actual;
           break;
+        case "all":
         default:
           return true;
           break;
       }
     })
       .sort((a, b) => {
-        if (a.title < b.title) return -1;
-        if (a.title > b.title) return 1;
+        if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
+        if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
         return 0;
       })
-      .map(skill => <SkillItem {...skill} />);
+      .map(skill => <SkillItem key={skill.title} {...skill} />);
     return (
       <StyledTechbox className="container">
         <h1>The Tools</h1>
-        <p>Ordered alphabetically</p>
+
         <Controls
           setStatus={this.setStatus}
           currentFilter={this.state.filter}
         />
+        <p>
+          <small>
+            I'm listing things that greatly affect my daily workflow, ordered
+            alphabetically. *In production.
+          </small>
+        </p>
+
         <StyledSkillItems>{skillItems}</StyledSkillItems>
       </StyledTechbox>
     );
