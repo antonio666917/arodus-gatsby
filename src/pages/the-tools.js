@@ -11,7 +11,8 @@ class TechBox extends React.Component {
           meta={[
             {
               name: "description",
-              content: "These are my tools of the trade. No technology is safe."
+              content:
+                "These are my tools of the trade. No technology is safe 😂."
             }
           ]}
         />
