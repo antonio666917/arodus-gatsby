@@ -75,7 +75,7 @@ export default {
     },
     {
       title: "Sass",
-      desc: "style sheet language",
+      desc: "CSS extension language",
       prod: true,
       actual: true
     },
@@ -350,6 +350,32 @@ export default {
       hobby: true,
       actual: true,
       learning: true
+    },
+    {
+      title: "Prettier",
+      desc: "opinionated code formatter, it's so good",
+      hobby: true,
+      actual: true,
+      prod: true
+    },
+    {
+      title: "CSS Grid Layout",
+      desc: "powerful layout system for CSS",
+      hobby: true,
+      actual: true,
+      learning: true,
+      prod: true
+    },
+    {
+      title: "Jest",
+      desc: "JavaScript testing solution",
+      actual: true,
+      learning: true
+    },
+    {
+      title: "Yeoman",
+      desc: "Scaffolding tool",
+      actual: false
     }
   ]
 };
