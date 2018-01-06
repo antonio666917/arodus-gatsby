@@ -12,7 +12,7 @@ class TechBox extends React.Component {
             {
               name: "description",
               content:
-                "These are my tools of the trade. No technology is safe 😂."
+                "These are my tools of the trade. No technology is safe! 😂."
             }
           ]}
         />
