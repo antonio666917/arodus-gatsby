@@ -52,6 +52,12 @@ const StyledSkillItems = styled.div`
   flex-wrap: wrap;
 `;
 
+const currentFilterInformation = {
+  name: `current`,
+  description: `I'm listing tools that greatly affect my daily workflow and projects
+  in production, ordered alphabetically.`
+};
+
 const Controls = props => {
   return (
     <StyledControls {...props}>
@@ -59,20 +65,27 @@ const Controls = props => {
         onClick={props.setStatus}
         className={props.currentFilter === "all" ? "is-active" : ""}
         data-filter="all"
+        data-description="Now, this is a huge, useless list! 😂"
       >
         All
       </button>
       <button
         onClick={props.setStatus}
-        className={props.currentFilter === "current" ? "is-active" : ""}
-        data-filter="current"
+        className={
+          props.currentFilter === currentFilterInformation.name
+            ? "is-active"
+            : ""
+        }
+        data-filter={currentFilterInformation.name}
+        data-description={currentFilterInformation.description}
       >
-        Currently using*
+        Currently using
       </button>
       <button
         onClick={props.setStatus}
         className={props.currentFilter === "learning" ? "is-active" : ""}
         data-filter="learning"
+        data-description="I'm currently focused on learning and mastering these."
       >
         Learning
       </button>
@@ -80,6 +93,7 @@ const Controls = props => {
         onClick={props.setStatus}
         className={props.currentFilter === "hobby" ? "is-active" : ""}
         data-filter="hobby"
+        data-description="I use these for personal, freelance and fun projects and prototypes!"
       >
         Hobbyist
       </button>
@@ -87,8 +101,9 @@ const Controls = props => {
         onClick={props.setStatus}
         className={props.currentFilter === "old" ? "is-active" : ""}
         data-filter="old"
+        data-description={`"Remember that the most valuable antiques are dear old friends."`}
       >
-        Legacy*
+        Legacy
       </button>
     </StyledControls>
   );
@@ -109,13 +124,15 @@ class Tools extends React.Component {
   constructor() {
     super();
     this.state = {
-      filter: "current"
+      filter: currentFilterInformation.name,
+      description: currentFilterInformation.description
     };
     this.setStatus = this.setStatus.bind(this);
   }
   setStatus(e) {
     this.setState({
-      filter: slugify(e.target.dataset.filter)
+      filter: slugify(e.target.dataset.filter),
+      description: e.target.dataset.description
     });
   }
   render() {
@@ -148,19 +165,17 @@ class Tools extends React.Component {
         return 0;
       })
       .map(skill => <SkillItem key={skill.title} {...skill} />);
+
     return (
       <StyledTechbox className="container">
-        <h1>The Tools</h1>
+        <h1>Tools</h1>
 
         <Controls
           setStatus={this.setStatus}
           currentFilter={this.state.filter}
         />
         <p>
-          <small>
-            I'm listing things that greatly affect my daily workflow, ordered
-            alphabetically. *In production.
-          </small>
+          <small>{this.state.description}</small>
         </p>
 
         <StyledSkillItems>{skillItems}</StyledSkillItems>
