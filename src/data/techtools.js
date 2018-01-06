@@ -1,5 +1,5 @@
 export default {
-  TechSkills: [
+  TechTools: [
     {
       title: "PHP",
       desc: "server-side programming langauge",
@@ -376,6 +376,13 @@ export default {
       title: "Yeoman",
       desc: "Scaffolding tool",
       actual: false
+    },
+    {
+      title: "Netlify",
+      desc: "incredible frontend code hosting",
+      actual: true,
+      hobby: true,
+      prod: true
     }
   ]
 };

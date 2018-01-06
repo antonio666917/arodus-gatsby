@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { TechSkills } from "../data/techskills";
+import { TechTools } from "../data/techtools";
 import { slugify } from "../utils/misc";
 
 const StyledTechbox = styled.div``;
@@ -136,22 +136,22 @@ class Tools extends React.Component {
     });
   }
   render() {
-    const skillItems = TechSkills.filter(skill => {
+    const skillItems = TechTools.filter(tool => {
       switch (this.state.filter) {
         case "current":
-          return skill.actual && skill.prod;
+          return tool.actual && tool.prod;
           break;
         case "learning":
-          return skill.learning;
+          return tool.learning;
           break;
         case "production":
-          return skill.prod;
+          return tool.prod;
           break;
         case "hobby":
-          return skill.actual && skill.hobby;
+          return tool.actual && tool.hobby;
           break;
         case "old":
-          return !skill.actual;
+          return !tool.actual;
           break;
         case "all":
         default:
@@ -164,7 +164,7 @@ class Tools extends React.Component {
         if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
         return 0;
       })
-      .map(skill => <SkillItem key={skill.title} {...skill} />);
+      .map(tool => <SkillItem key={tool.title} {...tool} />);
 
     return (
       <StyledTechbox className="container">
