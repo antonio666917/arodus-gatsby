@@ -11,38 +11,58 @@ const ginosBdayYear = 2005;
 export default () => (
   <StyledAbout className="container">
     <Helmet
-      title="About me | Antonio Rodriguez"
+      title="About Antonio Rodriguez"
       meta={[
         {
           name: "description",
-          content: "Knows what he's doing 60% of the time. Wow!"
+          content:
+            "Knows what he's doing 60% of the time. 60% critical chance! Wow!"
         }
       ]}
     />
     <h1>About me</h1>
     <p>
-      I own experience as a front-end developer, as a back-end developer,
-      leading and mentoring engineering teams, remotely and physically, as a
-      project manager, as an external consultant, as a digital marketing
-      "creative" technologist and in various other roles encompassed around
-      technology.
+      I've worn many hats over my young professional career: front-end
+      developer, back-end developer, database administrator, engineering teams
+      leader and mentor, solutions consultant, digital marketing technologist,
+      creative technologist, chief technology officer, and co-founder. Some of
+      these hats I've worn for curiosity and others out of necessity, but I've
+      always worn them with passion and drive.
+    </p>
+    <p>
+      I simply love how empowering technology can be, directly and indirectly.
+      The process of creation, going from a blank document and adding lines and
+      lines of code and potentially creating worlds is so stimulating and
+      satisfying. We have the best profession in the world.
+    </p>
+    <p>
+      I'm 31 years old and finally learning to appreciate and understand what
+      things are most important to me, such as family, quality friendships,
+      being a compassionate human being, treating yourself, the importance of
+      hard work, health and work-life balances. With these discoveries, I find
+      myself in a phase of reflection. Do I desire to continue climbing the
+      managerial ladder or do I want to return to my roots as a software
+      engineer? Stay tuned!
     </p>
 
     <h2>I f@#&*ing love learning and building things!</h2>
     <p>
-      Depending on the task or project, sometimes you just have to roll up the
-      sleeves and execute outside the comfort zones. Ultimately, persevering
-      through challenges is something that I look forward to every other day. I
-      might not be the best but I will definitely attempt what's needed until
-      achieving a viable resolution.
+      Rolling up my sleeves and executing outside my comfort zones is something
+      that I look forward to. I might not be the best and brightest engineer but
+      my drive and perseverance will help me achieve viable resolutions to the
+      challenges. It's not only about being successful, it's also about the
+      learning process and the collaboration involved in facing new things and
+      discovering your gallons.
     </p>
     <p>
-      My academic background is in computer science, which permits me to jump
+      My academic background is in computer science. This permits me to jump
       around languages, frameworks, design patterns, and the such, with what I
-      think is relative ease. At the end of the day, I just don't want to marry
-      myself with any technology or framework. I'm already married to my wife!
-      One must choose the <Link to="/the-tools">correct tool</Link> for each
-      situation.
+      think is relative ease. One must choose the{" "}
+      <Link to="/the-tools">correct tool</Link> for each situation and for this
+      reason my <Link to="/the-tools">
+        tools, processes, and methodologies
+      </Link>{" "}
+      are always evolving and under scrutiny.
     </p>
     <p>
       I'm eternally grateful to my parents and college professors for instilling
@@ -70,38 +90,40 @@ export default () => (
       a balance. As human beings, we have to seek to avoid violence and
       judgment. We have to seek for our coworkers to work with desire,
       commitment, and being proud of the products that we build. There's nothing
-      powerful that an engineer that is inspired, empowered, (and well paid).
+      powerful that an engineer that is inspired, empowered, respected, and well
+      paid.
     </p>
     <p>
       I also try to encourage my teams day in and day out to try the next and
       the previous thing. Make a proof-of-concept. Let's philosophize a little
-      bit on this approach versus that one. CSS-in-JS is dumb? Why? Let's try it
+      bit of this approach versus that one. CSS-in-JS is dumb? Why? Let's try it
       out. Oh, you love it now; that's great. Still dislike it? That's ok too.
       Share the learnings with the rest of the teams. Write some docs about it.{" "}
-      <strong>Let's do it</strong>!
+      <strong>Let's do it!</strong>
     </p>
 
     <h2>#AdLife</h2>
 
     <p>
       Working out of a marketing agency is fun! Without going into the innate
-      craziness of the culture and the office's spaces... We get to pick our
-      stacks with virtually no restrictions (in most cases) and get to build
-      whatever crazy shit we can think of! My teams ship out hundreds of
-      projects each year, each with variable scopes of work, difficulty, and
-      duration. And while our top deliverables are websites, promotional
-      web-apps, chatbots and a ton of custom tools, we build an insane range of
-      things.
+      craziness of the culture, clients, pace of work, and the office's
+      spaces... We get to pick our tech stacks and solutions with virtually no
+      restrictions (in most cases) and get to build whatever crazy shit we can
+      think of! My teams ship out hundreds of projects each year, each with
+      variable scopes of work, difficulty, and duration. And while our top
+      deliverables are websites, promotional web-apps, chatbots and a ton of
+      custom tools, we build a sweet range of things.
     </p>
 
     <p>
-      My favorite project at the moment is our MINE data platform. It's a huge
-      analytics, insights and reporting engine that consolidates data from
-      hundreds of concurrent media campaigns using Talend, BigQuery, custom
-      management tools written in Python, and Tableau for visualization, from
-      over 36 data sources of media, social, traffic, placement, revenue and
-      other third-party sources for each client. I consider this the heart of
-      our agency.
+      My favorite projects, at the moment, are our MINE data platform and
+      anything that has artificial intelligence and customer-facing interfaces.
+      MINE is a huge analytics, insights and reporting engine that consolidates
+      data from hundreds of concurrent media campaigns using Talend, BigQuery,
+      custom management tools written in Python, and Tableau for visualization,
+      from over 36 data sources of media, social, traffic, placement, revenue
+      and other third-party sources for each client. I consider this data
+      platform the heart of our agency.
     </p>
 
     <h2>Something extra</h2>
@@ -122,15 +144,16 @@ export default () => (
         experiences have been more educational than lucrative.
       </li>
       <li>
-        This year I've been focusing my efforts on conversational interfaces,
-        artificial intelligence, React, the Go language and improving my team
-        and project management skills.
+        This year I've been focusing my efforts on React, GraphQL, NodeJS, the
+        Go programming language (as a hobby) and improving my writing, team
+        leading and project management skills.
       </li>
       <li>
         Before college I was an avid athlete, practicing Shotokan and gymnastics
-        competitively! Nowadays I partake in pick-up basketball and DOTA2.
+        competitively! Nowadays I partake in pick-up basketball and MOBA-style
+        games, such as DOTA2.
       </li>
-      <li>I can play a mean guitar.</li>
+      <li>I love playing guitar.</li>
       <li>
         While working as a network specialist at the University of Puerto Rico's
         main precinct, a friend and I challenged the Dean of Technology to let
@@ -142,12 +165,11 @@ export default () => (
         code 😅!
       </li>
       <li>
-        During "the big 2010 student strike" at the University of Puerto Rico I
+        During "the big 2010 student strike" at the University of Puerto Rico, I
         built the first secure electronic referendum system employed by any
         governmental or educational institution in Puerto Rico. It was called
         the "Sistema de Consulta al Estudiante". It was a glorious disaster.
       </li>
-      <li>My wife and I met on Twitter.</li>
     </ul>
 
     <PictureFrame />
