@@ -28,14 +28,14 @@ class Home extends React.Component {
         <p>
           I'm a <strong>web developer</strong> employed as the{" "}
           <strong>chief technologist</strong> at a digital marketing agency.
-          Currently I work primarily with React and Node but over the years I
-          have acquired proficiency in{" "}
+          Currently, I work primarily with React and Node but over the years I
+          have gained proficiency in{" "}
           <Link to="/the-tools">many technologies</Link>.
         </p>
         <p>
-          Besides building my own companies, I've also produced things for many
+          Besides raising my own companies, I've also built things for many
           brands, Fortune 500 and small companies or individuals alike. Need a
-          hand with an upcoming project? Learn a bit more{" "}
+          hand for an upcoming project? Learn a bit more{" "}
           <Link to="/about-me">about me</Link> and then consider{" "}
           <a href="mailto:antoniwan@gmail.com?subject=Let's work together!">
             working with me
