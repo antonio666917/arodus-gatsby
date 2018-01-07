@@ -46,18 +46,6 @@ export default () => (
       engineer? Stay tuned!
     </p>
 
-    <p>
-      If you are looking for my resume,{" "}
-      <a
-        href={Resume}
-        rel="noopener noreferrer"
-        download={`Antonio Rodriguez - Resume - January 2018.pdf`}
-      >
-        click here
-      </a>{" "}
-      to download it in PDF format.
-    </p>
-
     <h2>I f@#&*ing love learning and building things!</h2>
     <p>
       Rolling up my sleeves and executing outside my comfort zones is something
@@ -72,9 +60,7 @@ export default () => (
       around languages, frameworks, design patterns, and the such, with what I
       think is relative ease. One must choose the{" "}
       <Link to="/the-tools">correct tool</Link> for each situation and for this
-      reason my <Link to="/the-tools">
-        tools, processes, and methodologies
-      </Link>{" "}
+      reason my <Link to="/the-tools">tools, processes, and methodologies</Link>{" "}
       are always evolving and under scrutiny.
     </p>
     <p>
@@ -137,6 +123,19 @@ export default () => (
       from over 36 data sources of media, social, traffic, placement, revenue
       and other third-party sources for each client. I consider this data
       platform the heart of our agency.
+    </p>
+
+    <h2>Resume</h2>
+    <p>
+      If you are looking for my resume,{" "}
+      <a
+        href={Resume}
+        rel="noopener noreferrer"
+        download={`Antonio Rodriguez - Resume - January 2018.pdf`}
+      >
+        click here
+      </a>{" "}
+      to download it in PDF format.
     </p>
 
     <h2>Something extra</h2>
