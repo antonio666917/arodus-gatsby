@@ -20,7 +20,8 @@ class Home extends React.Component {
           meta={[
             {
               name: "description",
-              content: "Web developer in Miami, Florida."
+              content:
+                "Web developer and digital marketing expert living in Miami, Florida."
             }
           ]}
         />

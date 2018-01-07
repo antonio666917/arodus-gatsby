@@ -51,6 +51,9 @@ class Navigation extends React.Component {
             <Link to="/tools" activeClassName="active">
               Tools
             </Link>
+            <Link to="/contact" activeClassName="active">
+              Contact
+            </Link>
           </nav>
         </Headroom>
       </StyledMenu>
