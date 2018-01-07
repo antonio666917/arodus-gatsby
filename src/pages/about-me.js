@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import PictureFrame from "../components/PictureFrame";
+import Resume from "../assets/documents/resume.pdf";
 
 const StyledAbout = styled.div``;
 const todayYear = new Date().getFullYear();
@@ -43,6 +44,18 @@ export default () => (
       myself in a phase of reflection. Do I desire to continue climbing the
       managerial ladder or do I want to return to my roots as a software
       engineer? Stay tuned!
+    </p>
+
+    <p>
+      If you are looking for my resume,{" "}
+      <a
+        href={Resume}
+        rel="noopener noreferrer"
+        download={`Antonio Rodriguez - Resume - January 2018.pdf`}
+      >
+        click here
+      </a>{" "}
+      to download it in PDF format.
     </p>
 
     <h2>I f@#&*ing love learning and building things!</h2>
