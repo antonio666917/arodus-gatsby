@@ -46,7 +46,7 @@ export default () => (
       engineer? Stay tuned!
     </p>
 
-    <h2>I f@#&*ing love learning and building things!</h2>
+    <h2>I love learning and building things</h2>
     <p>
       Rolling up my sleeves and executing outside my comfort zones is something
       that I look forward to. I might not be the best and brightest engineer but
@@ -74,7 +74,7 @@ export default () => (
       empathy and communication, one could miss out on many good things.
     </p>
 
-    <h2>Violence is a no-go</h2>
+    <h2>Stop the violence</h2>
     <p>
       Can we truly work solely with someone's skills but not with their being
       and emotions? Sometimes we can, and that's cool. But sometimes people want
@@ -101,7 +101,7 @@ export default () => (
       <strong>Let's do it!</strong>
     </p>
 
-    <h2>#AdLife</h2>
+    <h2>Working at a marketing agency</h2>
 
     <p>
       Working out of a marketing agency is fun! Without going into the innate
