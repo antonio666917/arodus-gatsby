@@ -125,19 +125,6 @@ export default () => (
       platform the heart of our agency.
     </p>
 
-    <h2>Resume</h2>
-    <p>
-      If you are looking for my resume,{" "}
-      <a
-        href={Resume}
-        rel="noopener noreferrer"
-        download={`Antonio Rodriguez - Resume - January 2018.pdf`}
-      >
-        click here
-      </a>{" "}
-      to download it in PDF format.
-    </p>
-
     <h2>Something extra</h2>
 
     <ul>
