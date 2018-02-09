@@ -6,7 +6,7 @@ export default {
       prod: true
     },
     {
-      title: "NodeJS",
+      title: "Node.js",
       desc:
         "JavaScript server-side runtime for client-side and back-end applications",
       prod: true,
@@ -50,7 +50,7 @@ export default {
       prod: true
     },
     {
-      title: "AngularJS",
+      title: "Angular.js",
       desc: "front-end JavaScript library",
       prod: true
     },
@@ -92,7 +92,7 @@ export default {
       actual: true
     },
     {
-      title: "NextJS",
+      title: "Next.js",
       desc: "framework for server-rendered React apps",
       prod: true,
       actual: true
@@ -172,7 +172,7 @@ export default {
       actual: true
     },
     {
-      title: "Amazon Alexa Skills Kit",
+      title: "Alexa Skills Kit",
       desc: "voice service framework",
       prod: true,
       hobby: true,
@@ -230,8 +230,8 @@ export default {
       learning: false
     },
     {
-      title: "Lumen PHP",
-      desc: "minimal PHP framework",
+      title: "Lumen",
+      desc: "PHP micro-framework",
       prod: true
     },
     {
@@ -367,6 +367,14 @@ export default {
       prod: true
     },
     {
+      title: "Flexible Box Module",
+      desc: "aka. flexbox, layout system for CSS",
+      hobby: true,
+      actual: true,
+      learning: true,
+      prod: true
+    },
+    {
       title: "Jest",
       desc: "JavaScript testing solution",
       actual: true,
@@ -382,6 +390,54 @@ export default {
       desc: "incredible frontend code hosting",
       actual: true,
       hobby: true,
+      prod: true
+    },
+    {
+      title: "Babel",
+      desc: "JavaScript compiler",
+      actual: true,
+      prod: true
+    },
+    {
+      title: "Drupal",
+      desc: "Content platform for PHP",
+      prod: true
+    },
+    {
+      title: "Rollbar",
+      desc: "monitoring and alerting service",
+      prod: true,
+      actual: true
+    },
+    {
+      title: "Lodash",
+      desc: "JavaScript utility library",
+      prod: true,
+      actual: true
+    },
+    {
+      title: "Tensorflow",
+      desc: "open-source machine learning framework",
+      prod: true,
+      learning: true,
+      actual: true
+    },
+    {
+      title: "Amazon Web Services",
+      desc: "services platform, using Lambdas and S3",
+      prod: true,
+      actual: true
+    },
+    {
+      title: "ESLint",
+      desc: "linting utility for JavaScript and JSX",
+      prod: true,
+      hobby: true,
+      actual: true
+    },
+    {
+      title: "CodeIgniter",
+      desc: "PHP framework",
       prod: true
     }
   ]
