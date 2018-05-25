@@ -27,28 +27,14 @@ class Home extends React.Component {
         />
         <h1>Hello!</h1>
         <p>
-          I'm a <strong>web developer</strong> employed as the{" "}
-          <strong>chief technologist</strong> at a digital marketing agency.
-          Currently, I work primarily with React and Node but over the years I
-          have gained proficiency in{" "}
-          <Link to="/the-tools">many technologies</Link>.
+          My name is in your browser's address bar 🤓 and I lead software development for a <a href="https://m8agency.com" target="_blank" rel="noopener noreferrer">marketing agency</a> in Miami, Florida. I absolutely enjoy learning and working with <Link to="/the-tools">web technologies</Link>. We have the best job in the world!
         </p>
+        <p>Away from the screen, I like playing <a href="https://www.instagram.com/stories/highlights/17908582195073038/" target="_blank" rel="noopener noreferrer">guitar</a>, basketball and spending time with my family.  And food, lots of food.</p>
+        <p>Please do <Link to="/contact">contact</Link> me! I'm open to mentoring, code reviews, projects or just casual conversation.</p>
         <p>
-          Besides raising my own companies, I've also built things for many
-          brands, Fortune 500 and small companies or individuals alike. Need a
-          hand for an upcoming project? Learn a bit more{" "}
-          <Link to="/about-me">about me</Link> and then consider{" "}
-          <a href="mailto:antoniwan@gmail.com?subject=Let's work together!">
-            working with me
-          </a>.
-        </p>
-        <p>
-          Thanks for visiting!<br />
-          <strong>Antonio Rodriguez</strong>
+          Thanks for visiting!
         </p>
 
-        <hr />
-        <Social />
       </StyledHome>
     );
   }
