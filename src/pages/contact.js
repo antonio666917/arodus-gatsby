@@ -8,12 +8,12 @@ const StyledHome = styled.div``;
 export default () => (
   <StyledHome className="container">
     <Helmet
-      title="Contact Antonio Rodriguez"
+      title="Contacting Antonio Rodriguez"
       meta={[
         {
           name: "description",
           content:
-            "If you would like to get in touch with me, send me an email!"
+            "Don't be shy! I'm open to mentoring, code reviews, projects or just casual conversation."
         }
       ]}
     />

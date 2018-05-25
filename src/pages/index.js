@@ -21,7 +21,7 @@ class Home extends React.Component {
             {
               name: "description",
               content:
-                "Web developer and digital marketing expert living in Miami, Florida."
+                "Software engineer living in Miami, Florida. Knows what he's doing 60% the time. Will work for food."
             }
           ]}
         />
