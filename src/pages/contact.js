@@ -27,11 +27,31 @@ export default () => (
       >
         antoniwan@gmail.com
       </a>{" "}
-      or check out my social media links below. I'm fairly active in <a
+      or check out my social media links below. I'm fairly active in{" "}
+      <a
         href="https://twitter.com/antoniwan"
         target="_blank"
         rel="noopener noreferrer"
-      >Twitter</a>. So after you follow me, check out my #beastmode <a href="https://open.spotify.com/user/antoniwan/playlist/18Fchy5u9YkOvUqtAKqMj1" target="_blank" rel="noopener noreferrer">classical</a> and <a href="https://open.spotify.com/user/antoniwan/playlist/7gqDk94DAF0O5ifBuKAlVH" target="_blank" rel="noopener noreferrer">salsa</a> playlists. Cheers!</p>
+      >
+        Twitter
+      </a>! After you follow me, check out some sweet{" "}
+      <a
+        href="https://open.spotify.com/user/antoniwan/playlist/18Fchy5u9YkOvUqtAKqMj1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        classical
+      </a>{" "}
+      and{" "}
+      <a
+        href="https://open.spotify.com/user/antoniwan/playlist/7gqDk94DAF0O5ifBuKAlVH"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        salsa
+      </a>{" "}
+      playlists I created for you. Cheers!
+    </p>
 
     <Social />
   </StyledHome>
