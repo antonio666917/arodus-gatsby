@@ -24,17 +24,41 @@ class Home extends React.Component {
                 "Software engineer living in Miami, Florida. Knows what he's doing 60% the time. Will work for food."
             }
           ]}
-        />
-        <h1>Hello!</h1>
+        />{" "}
+        <h1> Hello! </h1>{" "}
         <p>
-          My name is in your browser's address bar 🤓 and I lead software development for a <a href="https://m8agency.com" target="_blank" rel="noopener noreferrer">marketing agency</a> in Miami, Florida. I absolutely enjoy learning and working with <Link to="/the-tools">web technologies</Link>. We have the best job in the world!
-        </p>
-        <p>Away from the screen, I like playing <a href="https://www.instagram.com/stories/highlights/17908582195073038/" target="_blank" rel="noopener noreferrer">guitar</a>, basketball and spending time with my family.  And food, lots of food.</p>
-        <p>Please do <Link to="/contact">contact</Link> me! I'm open to mentoring, code reviews, projects or just casual conversation.</p>
+          My name is in your browser 's address bar 🤓 and I lead software
+          development for a{" "}
+          <a
+            href="https://m8agency.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            marketing agency
+          </a>{" "}
+          in Miami, Florida. I absolutely enjoy learning and working with{" "}
+          <Link to="/the-tools">web technologies</Link>. We have the best job in
+          the world!{" "}
+        </p>{" "}
         <p>
-          Thanks for visiting!
+          {" "}
+          Away from the screen, I like playing{" "}
+          <a
+            href="https://www.instagram.com/stories/highlights/17908582195073038/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            guitar{" "}
+          </a>, basketball and spending time with my family. And food, lots of
+          food.
         </p>
-
+        <p>
+          {" "}
+          Please do <Link to="/contact"> contact </Link> me! I'm open to
+          mentoring, code reviews, projects or just casual conversation.
+        </p>
+        <p>Thanks for visiting!</p>
       </StyledHome>
     );
   }
