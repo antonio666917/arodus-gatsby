@@ -208,7 +208,8 @@ export default {
     {
       title: "Redux",
       desc: "state container for JavaScript apps",
-      learning: true
+      learning: true,
+      prod: true
     },
     {
       title: "Apache Cordova",
@@ -286,12 +287,14 @@ export default {
       desc: "command-line shell",
       prod: true,
       hobby: true,
-      actual: true
+      actual: false
     },
     {
       title: "Zsh",
       desc: "command-line shell",
-      prod: true
+      prod: true,
+      actual: true,
+      hobby: true
     },
     {
       title: "jQuery",
@@ -349,7 +352,8 @@ export default {
       desc: "natual language processing APIs",
       hobby: true,
       actual: true,
-      learning: true
+      learning: true,
+      prod: true
     },
     {
       title: "Prettier",
@@ -420,7 +424,7 @@ export default {
       desc: "open-source machine learning framework",
       prod: true,
       learning: true,
-      actual: true
+      actual: false
     },
     {
       title: "Amazon Web Services",
