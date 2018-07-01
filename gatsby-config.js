@@ -1,3 +1,13 @@
+let activeEnv = process.env.ACTIVE_ENV;
+
+if (!activeEnv) {
+  activeEnv = "development";
+}
+
+require("dotenv").config({
+  path: `.env.${activeEnv}`
+});
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://antoniorodriguez.us`,
@@ -16,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-49026829-1",
+        trackingId: process.env.GA_TRACKING_ID,
         head: false,
         anonymize: true,
         respectDNT: true,
