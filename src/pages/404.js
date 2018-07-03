@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import get from "lodash/get";
 import styled from "styled-components";
+import axios from "axios";
 
 const Styled404 = styled.div`
   img {
@@ -35,27 +36,27 @@ class NotFoundPage extends Component {
     this.getRandomGiphy = this.getRandomGiphy.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick() {
     this.setState({
       gif: null
     });
     this.getRandomGiphy();
   }
-  getRandomGiphy(tags = "fail") {
-    const giphyRequest = new Request(
-      `https://api.giphy.com/v1/gifs/random?api_key=${
-        process.env.GATSBY_GIPHY_API_KEY
-      }&tag=${tags}&rating=g`
-    );
 
-    fetch(giphyRequest)
+  getRandomGiphy(tags = "fail") {
+    // prettier-ignore
+    const giphyRequest = `https://api.giphy.com/v1/gifs/random?api_key=${process.env.GATSBY_GIPHY_API_KEY}&tag=${tags}&rating=R`;
+
+    axios
+      .get(giphyRequest)
       .then(response => {
-        return response.json();
+        return response.data;
       })
-      .then(body => {
-        const gif = get(body, "data.image_url", "test");
+      .then(data => {
+        const gif = get(data, "data.image_url");
         this.setState({
-          gif: gif
+          gif
         });
         return gif;
       });
@@ -66,7 +67,9 @@ class NotFoundPage extends Component {
     return (
       <Styled404 className="container">
         <h1>404 ERROR: NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness 😭</p>
+        <p>
+          You just hit a route that doesn&#39;t exist. Here's a random Giphy.
+        </p>
         {gif && (
           <img src={gif} onClick={this.handleClick} alt="Random animated gif" />
         )}
